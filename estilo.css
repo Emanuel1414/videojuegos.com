@@ -1,0 +1,349 @@
+*{margin:0; padding:0; box-sizing:border-box;}
+
+body{
+    background: url(Img/Foto9.jpg) no-repeat fixed center center;
+    background-size: cover;
+    font-family: calibri;
+}
+
+h1{
+    color: #fff;
+    font-size: 45px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+section{
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto{
+    
+    background-color: #fff;
+    text-align: center;
+    flex-basis: calc(33% - 20px);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto img{
+    width:100%;
+}
+
+.info{
+    
+    flex-grow: 1;
+    padding: 0px 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2{
+    margin: 5px 0px;
+}
+
+.precio{
+    display:flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+p{
+    margin-left: 5px;
+}
+
+.info a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(2,175,2);
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+li{
+    list-style: none;
+    display:flex;
+    flex-grow: 1;
+   
+}
+
+header a{
+    flex-grow: 1;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: calibri;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+ul{
+    padding: 0px;
+    display:flex;
+    justify-content: space-around;
+}
+
+header a:hover{
+    color: #e74c3c;
+    background-color: #fff;
+}
+
+header{
+    border:1px solid red;
+    width: 95%;
+    margin: auto;
+    background-color: #e74c3c;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+
+}
+
+.caja-principal{
+   border: 0px solid red;
+    width: 95%;
+    margin:auto;
+    padding-top:50px;
+    padding-bottom: 50px;
+    
+}
+
+.foto-juego{
+
+    
+    margin-top: 40px;
+    width: 50%;
+    margin:auto;
+    background-color: black;
+    padding-bottom: 0px;
+    text-align: center;
+
+}
+
+.foto-juego img{
+    width: 100%;
+    
+}
+
+.info-juego h2{
+    font-size: 30px;
+    text-align: center;
+    color:white;
+    margin-left: 20px;
+
+}
+
+.info-producto{
+    color:white;
+    font-size: 22px;
+    text-align: justify;
+    margin-left: 28px;
+    width:90%;
+    margin-bottom: 20px;
+    
+
+    
+}
+
+.info-juego{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.color1{
+    border: 0px solid green;
+    width: 95%;
+    margin:auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.caja-contenedora{
+    width: 80%;
+    margin:auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.informacion{
+    font-family: calibri;
+    font-size: 19px;
+    color: #fff;
+    text-align: justify;
+}
+
+.caja-juego{
+    width: 60%;
+}
+
+.foto-producto{
+    display:flex;
+    flex-direction:column;
+    width: 50%;
+    text-align: center;
+}
+
+h3{
+    font-size: 50px;
+    text-align: center;
+    margin-left: 350px;
+    font-family: calibri;
+    color: white;
+}
+
+.foto-producto img{
+    width: 95%;
+}
+
+
+
+
+
+@media(max-width:800px){
+    .producto{
+        flex-basis: calc(50% - 20px);
+
+    }
+
+    
+    header a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+
+    .foto-juego{
+        width: 71%;
+    }
+
+    .info-producto{
+        margin-left: 25px;
+    }
+
+    .informacion{
+        font-size: 18px;
+        margin-left: 2px;
+        
+    }
+
+    .foto-producto{
+        width: 60%;
+    }
+
+    .foto-producto img{
+        width: 95%;
+    }
+
+    .caja-juego{
+        width: 90%;
+    }
+
+    h3{
+        font-size: 40px;
+        margin-left: 250px;
+    }
+    .caja-contenedora{
+        width: 100%;
+    }
+}
+
+@media(max-width: 490px){
+    .producto{
+        flex-basis: 100%;
+        flex-direction: row;
+    }
+
+    .producto img{
+        width: 50%;
+    }
+
+    .info{
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    header a{
+        font-size: 20px;
+        margin-left: 5px;
+        
+    }
+
+    header{
+        width: 40%;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    ul{
+        flex-direction: column;
+        
+    }
+
+    .foto-juego{
+        width:90%;
+    }
+
+    .info-producto{
+        font-size: 17px;
+        
+    }
+
+    .info-juego h2{
+        font-size: 22px;
+    }
+
+    .informacion{
+        font-size: 17px;
+        width:100%;
+
+    }
+
+    .caja-contenedora{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .foto-producto{
+        width: 100%;
+    }
+
+    h3{
+        font-size: 30px;
+        margin-left: 130px;
+    }
+
+    .red{
+        margin-left: 90px;
+    }
+
+   
+
+   
+
+
+
+}
